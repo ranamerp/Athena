@@ -27,7 +27,7 @@ class OwlCog(commands.Cog):
 	async def get_token(self):
 		#need to change this to use env variables
 		data = { 'grant_type': 'client_credentials' }
-		response = requests.post('https://us.battle.net/oauth/token', data=data, auth=('b63fd0741ed448b4a1dadf78bfe0a185', 'Mu409VfwMmlc4dcR9rYLw9abunhp7JhF'))
+		response = requests.post('https://us.battle.net/oauth/token', data=data, auth=('INSERT_TOKENS_HERE', 'REMOVING_THIS_TOKEN'))
 		token = json.loads(response.text)
 		self.token = token['access_token']
 		
