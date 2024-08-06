@@ -1,0 +1,16 @@
+.env
+
+__pycache__/
+
+.vscode/
+
+queries.pgsql
+
+venv/
+
+venv/pyvenv.cfg
+cogs/workspace.code-workspace
+tabledefs.txt
+
+
+.github\workflows\python-app.yml
